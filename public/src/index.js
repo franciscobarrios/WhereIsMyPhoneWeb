@@ -1,10 +1,11 @@
+import _ from 'lodash';
 import {
     initializeApp
-} from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js';
+} from 'firebase/app';
 import {
     getAuth,
     createUserWithEmailAndPassword
-} from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js';
+} from "firebase/auth";
 
 const firebaseConfig = {
     apiKey: "AIzaSyBkMV4zCEMkVF_Lvy-5AcIfnHIaLx4GAtA",
@@ -21,20 +22,17 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 function initApp() {
-    document.getElementById('create-user').addEventListener('click', createUser, false);
+    document.getElementById('create-user').addEventListener('click', signUpEmailPassword, false);
 }
 
-function createUser() {
+function signUpEmailPassword() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCreadential) => {
-
             console.log('userCreadential >>>>>>> ', userCreadential);
-
             console.log('userCreadential >>>>>>> ', userCreadential['user']['uid']);
-
             userCreadential.user.getUid()
                 .then((uid) => {
                     console.log('uid >>>>>>> ', uid);

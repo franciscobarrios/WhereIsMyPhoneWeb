@@ -1,0 +1,25 @@
+body{
+    background-color: #f2f2f2;
+}
+
+input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+div.main-box{
+    background-color: #ffffff;
+    box-shadow: 7px 4px 31px 4px #a0a0a0;
+    margin: 36px;
+    padding: 48px;
+    border-radius: 12px;   
+}

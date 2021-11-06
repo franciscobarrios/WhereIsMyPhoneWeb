@@ -1,20 +1,23 @@
 {
   "name": "where-is-my-phone",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=production ./public/src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "firebase": "^9.3.0"
+    "firebase": "^9.3.0",
+    "lodash": "^4.17.21",
+    "material-components-web": "^13.0.0"
   },
   "devDependencies": {
     "webpack": "^5.62.1",
     "webpack-cli": "^4.9.1"
-  }
+  },
+  "main": "index.js",
+  "description": ""
 }
