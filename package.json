@@ -1,23 +1,32 @@
 {
-  "name": "where-is-my-phone",
+  "name": "WhereIsMyPhone",
   "version": "1.0.0",
-  "type": "module",
+  "description": "This is Where Is My Phone? web",
   "private": true,
   "scripts": {
-    "build": "webpack --mode=production ./public/src/index.js"
+    "build": "webpack --mode=development --config webpack.config.js",
+    "deploy": "firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscobarrios/WhereIsMyPhoneWeb.git"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "firebase": "^9.3.0",
-    "lodash": "^4.17.21",
-    "material-components-web": "^13.0.0"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franciscobarrios/WhereIsMyPhoneWeb/issues"
   },
+  "homepage": "https://github.com/franciscobarrios/WhereIsMyPhoneWeb#readme",
   "devDependencies": {
+    "ntl": "^5.1.0",
     "webpack": "^5.62.1",
     "webpack-cli": "^4.9.1"
   },
-  "main": "index.js",
-  "description": ""
+  "dependencies": {
+    "@material/ripple": "^13.0.0",
+    "@material/textfield": "^13.0.0",
+    "firebase": "^9.3.0",
+    "lodash": "^4.17.21"
+  }
 }

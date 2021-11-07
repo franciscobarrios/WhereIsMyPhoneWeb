@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Welcome to Where is my phone?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+    <script src="main.js"></script>
+
+    <div class="mdc-card mdc-card--outlined" style="padding: 36px; margin: 12px;">
+        <h1>Where is my phone?</h1>
+        <p>This app will help you find your phone.</p>
+
+        <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label">
+            <span class="mdc-notched-outline">
+                <span class="mdc-notched-outline__leading">
+                </span>
+                <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="my-label-id"></span>
+                </span>
+                <span class="mdc-notched-outline__trailing"></span>
+            </span>
+            <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" id="email"
+                placeholder="Email">
+        </label>
+        <br>
+        <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label">
+            <span class="mdc-notched-outline">
+                <span class="mdc-notched-outline__leading"></span>
+                <span class="mdc-notched-outline__trailing"></span>
+            </span>
+            <input class="mdc-text-field__input" aria-label="Label" id="password" type="password"
+                placeholder="Password">
+        </label>
+        <br>
+        
+            <div class="center">
+                <button class="mdc-button mdc-button--raised mdc-button--leading" id="signup-email-password"
+                    style="width: 250px; margin-top: 12px;">
+                    <span class="mdc-button__ripple"></span>
+                    <span class="material-icons mdc-button__icon" aria-hidden="true">person</span>
+                    <span class="mdc-button__label">Create user</span>
+                </button>
+                <br>
+                <button class="mdc-button mdc-button--raised mdc-button--trailing" id="signin-email-password"
+                    style="width: 250px; margin-top: 12px;">
+                    <span class="mdc-button__ripple"></span>
+                    <span class="material-icons mdc-button__icon" aria-hidden="true">person</span>
+                    <span class="mdc-button__label">Sign in</span>
+                </button>
+                <br>
+                <button class="mdc-button mdc-button--raised mdc-button--trailing" id="signout"
+                    style="width: 250px; margin-top: 12px;">
+                    <span class="mdc-button__ripple"></span>
+                    <span class="material-icons mdc-button__icon" aria-hidden="true">person</span>
+                    <span class="mdc-button__label">Sign out</span>
+                </button>
+                <br>
+
+                <button id="google-signin">
+                    <span class="icon"></span>
+                    <span class="buttonText">Sign in with Google</span>
+                </button>
+            
+        </div>
+    </div>
+</body>
+
+</html>
